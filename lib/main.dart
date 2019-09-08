@@ -4,6 +4,7 @@ import 'package:regimen/addnote.dart';
 import 'package:regimen/screens/index.dart';
 import 'package:regimen/screens/login.dart';
 import 'package:regimen/screens/mediregimen.dart';
+import 'package:regimen/screens/medtime.dart';
 import 'package:regimen/screens/notes.dart';
 import 'package:regimen/screens/measurement_screens/bloodsugar.dart';
 import 'package:regimen/screens/measurement_screens/bloodpressure.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget{
         '/login': (BuildContext context) => new login(),
         '/med': (BuildContext context) => new addmed(),
         '/mediregimen': (BuildContext context) => new mediregimen(),
+        '/medtime': (BuildContext context) => new medtime(),
         '/addnote': (BuildContext context) => new addnote(),
         '/note': (BuildContext context) => new notes(),
         '/bloodpressure': (BuildContext context) => new bloodpressure(),

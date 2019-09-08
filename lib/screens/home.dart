@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:regimen/screens/medtime.dart';
 
 class home extends StatefulWidget{
   HomeState createState() => HomeState();
@@ -31,14 +32,22 @@ class HomeState extends State<home>{
                           decoration: BoxDecoration(
                             color: Color(0xffccb9bc),//56c8d8),
                           ),
-                          child: Center(
-                            child: Text('${timedetail[index]}'),)
-                        ),
-                        Container(
-                          child: Text('${medicationName[index]}'),)
-                      ],
+                          child: FlatButton(
+                            onPressed: (){medtime();},
+                            child: Column(
+                              children: <Widget>[
+                                Center(
+                                  child: Text('${timedetail[index]}'),
+                                ),
+                                Container(
+                                  child: Text('${medicationName[index]}'),
+                                ),
+                              ]),
+                          ),
                     ),
+                      ],
                   ),
+                ),
                 );
               },
             ),
